@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+  <meta charset="utf-8">
+  <!-- If you delete this meta tag World War Z will become a reality -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spokane Pet People</title>
+
+  <!-- foundation -->
+  <link rel="stylesheet" href="css/foundation.min.css">
+
+  <!-- themify icons -->
+  <link href="css/themify-icons.css" rel="stylesheet">
+
+  <!-- datepicker -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/foundation-datepicker/1.5.0/css/foundation-datepicker.min.css'>
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/app.css">
+
+  <!-- modernizer -->
+  <script src="js/vendor/modernizr.js"></script>
+
+  <!-- TypeKit -->
+  <script src="https://use.typekit.net/gbp6byw.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+<body>
+
+  <!-- Navigation -->
+
+  <div class="row">
+    <div class="medium-12">
+
+      <div class="title-bar" data-responsive-toggle="top-menu">          
+        <a href="#"><img class="mobile-logo float-left" src="images/SPP_mobile_logo.png"/></a> 
+        <button class="menu-icon float-right" type="button" data-toggle></button>
+      </div>
+      <div class="top-bar" id="top-menu">
+        <div class="top-bar-left">
+          <a href="#"><img class="desktop-logo float-left" src="images/SPP_mobile_logo.png"/></a> 
+        </div>
+        <div class="top-bar-right">
+          <ul class="vertical medium-horizontal menu">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Book</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Presentation -->
+
+  <div class="fixed-background">
+    <div class="row">
+      <div class="medium-12 columns home-panel">
+
+        <div class="row">
+          <div class="medium-10 medium-centered columns">
+            <h1 class="text-center">We are Spokane Pet&nbsp;People!</h1>
+            <p class="text-center">We offer dog boarding as well as dog (and cat) home visits. Your furry friend will receive our love and individual attention as if it were our own. All the dogs we sit truly become part of the&nbsp;family.</p>
+            <p class="text-center"><a href="#" class="button">Book now</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div> 
+
+  <!-- Featured section -->
+
+  <div class="row">
+    <div class="medium-10 medium-centered columns featured-section" id="services">
+
+      <div class="row">
+        <div class="small-4 columns">
+          <p class="ti-home featured-icons text-center"></p>
+          <h3 class="text-center">Dog Sitting</h3>
+        </div>
+        <div class="small-4 columns">
+          <p class="ti-car featured-icons text-center"></p>
+          <h3 class="text-center">Drop-in Visit</h3>
+        </div>
+        <div class="small-4 columns">
+          <p class="ti-thumb-up featured-icons text-center"></p>
+          <h3 class="text-center">Bathing &amp; Training</h3>
+        </div>        
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Stripe 1 -->
+
+  <div class="stripe-1 stripe">
+    <div class="row">
+      <div class="medium-6 columns">
+        <p class="text-center">
+          <img src="images/stripe-1-img.jpg" alt="Gary and Heidi Bailey">
+        </p>
+      </div>
+      <div class="medium-6 columns">
+        <h2>Welcome to the&nbsp;family.</h2>
+        <p>Our names are Gary and Heidi Bailey. We have been married for six years and have two wonderful daughters Louella (4) and Evette (2). We have raised our kids to be very respectful of animals. We also have two&nbsp;cats.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stripe 2 -->
+
+  <div class="stripe-2 stripe">
+    <div class="row">
+      <div class="medium-6 columns">
+        <h2>We love animals!</h2>
+        <p>Animals have always been a part of our daily life, dogs and cats alike. They all have their own unique personalities and beauty. Getting to know your animal and building a relationship with them is one of the most rewarding parts about doing what we&nbsp;do.</p>
+      </div>
+      <div class="medium-6 columns">
+        <p class="text-center">
+          <img src="images/stripe-2-img.jpg" alt="Gary and Heidi Bailey">
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stripe 3 -->
+
+  <div class="stripe-3 stripe">
+    <div class="row">
+      <div class="medium-6 columns">
+        <p class="text-center">
+          <img src="images/stripe-3-img.jpg" alt="Gary and Heidi Bailey">
+        </p>
+      </div>
+      <div class="medium-6 columns">
+        <h2>Bath and training&nbsp;included.</h2>
+        <p>Many dog sitting services upcharge for baths and training. We believe both are simply part of the dog sitting experience. Just let us know if your pup would like a bath or if there are specific areas of training your dog needs help with like leash pulling and house&nbsp;training.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Booking form -->
+
+  <div class="booking-form">
+
+    <div class="row">
+      <div class="medium-12 columns">
+        <h2>Check our availability&nbsp;today!</h2>
+      </div>
+    </div>
+
+    <form id="ajax-contact" method="post" action="mailer.php" data-abide novalidate>
+			<div class="row">
+        <div class="medium-4 columns">
+
+        	<!-- Service type -->
+          <label><span class="form-error">&#42;&nbsp;</span>Service:</label>
+          <select id="Service" name="Service" required>
+            <option value="" disabled selected></option>
+            <option value="Dog sitting">Dog sitting</option>
+            <option value="Drop-in visit">Drop-in visit</option>
+          </select>
+
+        </div>
+
+        <div class="small-4 columns date-input">
+
+        <!-- Start date -->
+          <label><span class="form-error">&#42;&nbsp;</span>Start date:</label>
+          <input type="text" value="" id="From" name="From" required>
+
+        </div>
+        <div class="small-4 columns date-input">
+
+        <!-- End date -->
+          <label><span class="form-error">&#42;&nbsp;</span>End date:</label>
+          <input type="text" value="" id="To" name="To" required>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="medium-6 columns">
+          <div class="form-icons">
+            <div class="form-icon-line"></div>
+            <p class="text-center">
+              <span class="ti-user icon"></span>
+              <br> <span class="icon-label">Owner</span>
+            </p>
+          </div>
+
+          <!-- Name -->
+          <label><span class="form-error">&#42;&nbsp;</span>Name:</label>
+          <input type="text" id="Name" name="Name" required/>
+
+          <!-- Email -->
+          <label><span class="form-error">&#42;&nbsp;</span>Email:</label>
+          <input type="email" id="Email" name="Email" required/>
+
+          <!-- Phone number -->
+          <label><span class="form-error">&#42;&nbsp;</span>Phone number:</label>
+          <input type="tel" id="Phone-number" name="Phone-number" required/>
+
+        </div>
+
+        <div class="medium-6 columns">
+          <div class="form-icons">
+            <div class="form-icon-line"></div>
+            <p class="text-center">
+              <span class="ti-heart icon"></span>
+              <br> <span class="icon-label">Pets</span>
+            </p>
+          </div>
+
+          <div class="row" style="margin:0; ">
+            <div class="small-6 columns" style="padding:0rem; padding-right:1.5rem;">
+
+            <!-- Pet type -->
+              <label><span class="form-error">&#42;&nbsp;</span>Type:</label>
+              <select id="Type" name="Type" required>
+                <option value="" disabled selected></option>
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+              </select>
+
+            </div>
+            <div class="small-6 columns" style="padding:0rem; padding-left:1.5rem;">
+
+            <!-- Number of pets -->
+              <label><span class="form-error">&#42;&nbsp;</span>Number of pets:</label>
+              <select id="Number-of-pets" name="Number-of-pets" required>
+                <option value="" disabled selected></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+
+            </div>
+          </div>
+
+          <!-- Pet's name -->
+          <label><span class="form-error">&#42;&nbsp;</span>Pet's name(s):</label>
+          <input type="text" id="Pet-name" name="Pet-name" required/>
+
+          <!-- Pet's breed -->
+          <label><span class="form-error">&#42;&nbsp;</span>Breed(s):</label>
+          <input type="text" id="Breed" name="Breed" required/>   
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-12 columns">
+          <button type="submit" class="button">Submit</button>
+        </div>
+
+        <!-- form message -->
+        <div class="medium-12 columns">
+          <div id="form-messages" class="callout"></div>
+        </div>
+
+      </div>
+    </form>      
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="row">
+      <div class="medium-3 columns">
+        <p class="social-media">
+          <a href="https://www.facebook.com/spokanepetpeople" target="_blank"><span class="ti-facebook icon"></span></a>
+          <a href="https://www.instagram.com/spokanepetpeople/" target="_blank"><span class="ti-instagram icon"></span></a>
+        </p>
+      </div>
+      <div class="medium-9 columns">
+        <div class="contact-info">
+          <p><a href="mailto:Info@SpokanePetPeople.com">Info@SpokanePetPeople.com</a><br><span class="pipe">&nbsp;&nbsp;|&nbsp;&nbsp;</span>(509) 599-9708<span class="pipe">&nbsp;&nbsp;|&nbsp;&nbsp;</span><br><br>3210 E 44th Ave.<br>Spokane, WA 99223</p>
+          <p class="copyright">&copy;2016 Spokane Pet People. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/foundation.min.js"></script>
+  <!-- datepicker -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/foundation-datepicker/1.5.0/js/foundation-datepicker.min.js'></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
